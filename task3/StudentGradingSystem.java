@@ -3,7 +3,7 @@
 import java.util.Scanner;
 public class StudentGradingSystem {
 
-    // Method to calculate grade based on marks
+    
     public static String calculateGrade(int marks) {
         if (marks >= 90) return "A";
         else if (marks >= 80) return "B";
@@ -16,19 +16,19 @@ public class StudentGradingSystem {
         Scanner scanner = new Scanner(System.in);
 
         try {
-            // Taking Name Input
+            
             System.out.print("Enter Student Name: ");
             String name = scanner.nextLine();
 
-            // Formatting Name: Trim and Capitalize
+            
             name = name.trim();
             name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
 
-            // Taking Marks Input
+            
             System.out.print("Enter Marks (0-100): ");
             String marksInput = scanner.nextLine();
 
-            // Validate numeric format
+            
             int marks;
             try {
                 marks = Integer.parseInt(marksInput);
